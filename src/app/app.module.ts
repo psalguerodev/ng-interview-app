@@ -7,6 +7,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InterviewsComponent } from './pages/interviews/interviews.component';
 import { QuestionsComponent } from './pages/questions/questions.component';
+import { AngularFireModule } from '@angular/fire';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { environment } from '../environments/environment';
+import { QuestionsService } from './services/questions.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +23,14 @@ import { QuestionsComponent } from './pages/questions/questions.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [],
+  providers: [
+    QuestionsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

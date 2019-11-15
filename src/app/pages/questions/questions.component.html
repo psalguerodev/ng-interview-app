@@ -3,7 +3,68 @@
   <div class="col-md-8 col-sm-10 col-lg-10">
     <div class="card">
       <div class="card-body padding-10">
-        <h4 class="text-secondary">Questions</h4>
+        <span class="float-left">
+          <h4 class="text-secondary">Questions</h4>
+        </span>
+        <span>
+          <h4 class="float-right">
+            <button type="button" class="btn btn-outline-primary btn-sm" (click)="showQuestionForm = !showQuestionForm"
+              [ngClass]="{'btn-outline-secondary': showQuestionForm}">
+              New <i class="fa fa-plus"></i>
+            </button>
+          </h4>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create or update Question -->
+<div class="row justify-content-center top-10 animated bounceInRight" *ngIf="showQuestionForm">
+  <div class="col-md-8 col-sm-10 col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <form name="questionForm">
+          <div class="form-group">
+            <label for="">
+              Question Type
+              <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal"
+                data-target="#questionTypeModal">
+                <i class="fa fa-plus"></i>
+              </button>
+            </label>
+            <select name="questionType" id="questionType" class="form-control">
+              <option value="">Choose...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="">What is the question?</label>
+            <input type="text" name="question" id="question" class="form-control" placeholder="Whats is the question?">
+          </div>
+
+          <div class="form-group">
+            <label for="labels">Labels</label>
+            <input type="text" name="labels" id="labels" class="form-control"
+              placeholder="Labels separate with , / soff,scrum,xp">
+          </div>
+
+          <div class="form-group">
+            <label for="">Importance: <span class="text-primary">0</span></label>
+            <input type="range" class="custom-range" id="importance" name="importance" value="0" min="0" max="5">
+          </div>
+
+          <div class="form-group">
+            <label for="">Background</label>
+            <textarea name="background" id="background" cols="30" rows="2" class="form-control"
+              placeholder="The desire of this question"></textarea>
+          </div>
+
+          <div id="buttons" class="float-right">
+            <button type="button" class="btn btn-primary right-10">Save question!</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -14,7 +75,40 @@
   <div class="col-md-8 col-sm-10 col-lg-10">
     <div class="card">
       <div class="card-body">
-        ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores voluptatum ut ipsa, est magni ducimus delectus dicta neque et, ullam possimus optio molestias nostrum praesentium quidem rerum. Accusamus, ipsum.
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade animated baunce" id="questionTypeModal" tabindex="-1" role="dialog"
+  aria-labelledby="questionTypeModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="questionTypeModal">Question Type</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Name"
+            [(ngModel)]="questionType.name">
+        </div>
+        <div class="form-group">
+          <label for="">Description</label>
+          <textarea name="description" id="description" class="form-control" cols="30" rows="2"
+            placeholder="About this question type" [(ngModel)]="questionType.description"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="saveQuestionType()">Save changes</button>
       </div>
     </div>
   </div>

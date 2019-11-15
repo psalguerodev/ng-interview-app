@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573784270308,
+  "timestamp": 1573786591380,
   "index": "/ng-interview-app/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/ng-interview-app/favicon.ico",
         "/ng-interview-app/index.html",
-        "/ng-interview-app/main-es2015.f972628fbdc2b23806b7.js",
-        "/ng-interview-app/main-es5.f972628fbdc2b23806b7.js",
+        "/ng-interview-app/main-es2015.fc7c47a7c6a6a745daef.js",
+        "/ng-interview-app/main-es5.fc7c47a7c6a6a745daef.js",
         "/ng-interview-app/manifest.webmanifest",
         "/ng-interview-app/polyfills-es2015.c7adb0e20b57a14746d0.js",
         "/ng-interview-app/polyfills-es5.15937e7750a5dacc952d.js",
@@ -62,9 +62,9 @@
     "/ng-interview-app/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "/ng-interview-app/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/ng-interview-app/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/ng-interview-app/index.html": "5c854ad1a310178967e1b4b98b6a5994b4e094d8",
-    "/ng-interview-app/main-es2015.f972628fbdc2b23806b7.js": "c03eda97d18c1a13dda83f52ffa0ae33a6d8b515",
-    "/ng-interview-app/main-es5.f972628fbdc2b23806b7.js": "4b9645fd278024c88290793b1ce1fb7683116bcb",
+    "/ng-interview-app/index.html": "0d85bc5558269f6c531e0a6f22a9d0fabc81544d",
+    "/ng-interview-app/main-es2015.fc7c47a7c6a6a745daef.js": "d7ad142fd2aebf33e299fe69e5933ea4495980c0",
+    "/ng-interview-app/main-es5.fc7c47a7c6a6a745daef.js": "6c38e9743254212119d3fe2f38b8be0e9c0f8654",
     "/ng-interview-app/manifest.webmanifest": "bf55f1355ed083f60dfa7c6ef1d98b7cf29364fe",
     "/ng-interview-app/polyfills-es2015.c7adb0e20b57a14746d0.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "/ng-interview-app/polyfills-es5.15937e7750a5dacc952d.js": "c1b326602e7b72c79de60cd3c2fd8f60a97bf078",

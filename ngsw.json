@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573783928386,
+  "timestamp": 1573784270308,
   "index": "/ng-interview-app/index.html",
   "assetGroups": [
     {
@@ -65,7 +65,7 @@
     "/ng-interview-app/index.html": "5c854ad1a310178967e1b4b98b6a5994b4e094d8",
     "/ng-interview-app/main-es2015.f972628fbdc2b23806b7.js": "c03eda97d18c1a13dda83f52ffa0ae33a6d8b515",
     "/ng-interview-app/main-es5.f972628fbdc2b23806b7.js": "4b9645fd278024c88290793b1ce1fb7683116bcb",
-    "/ng-interview-app/manifest.webmanifest": "a8ff07c0cc47df964116a3c1030ec35abe620ed4",
+    "/ng-interview-app/manifest.webmanifest": "bf55f1355ed083f60dfa7c6ef1d98b7cf29364fe",
     "/ng-interview-app/polyfills-es2015.c7adb0e20b57a14746d0.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "/ng-interview-app/polyfills-es5.15937e7750a5dacc952d.js": "c1b326602e7b72c79de60cd3c2fd8f60a97bf078",
     "/ng-interview-app/runtime-es2015.a75da5b4ae824fc245dd.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",

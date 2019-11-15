@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573783753494,
+  "timestamp": 1573783928386,
   "index": "/ng-interview-app/index.html",
   "assetGroups": [
     {
@@ -62,7 +62,7 @@
     "/ng-interview-app/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "/ng-interview-app/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/ng-interview-app/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/ng-interview-app/index.html": "28ffd1975c1edff5b651bfce34e8fdac98d8dd47",
+    "/ng-interview-app/index.html": "5c854ad1a310178967e1b4b98b6a5994b4e094d8",
     "/ng-interview-app/main-es2015.f972628fbdc2b23806b7.js": "c03eda97d18c1a13dda83f52ffa0ae33a6d8b515",
     "/ng-interview-app/main-es5.f972628fbdc2b23806b7.js": "4b9645fd278024c88290793b1ce1fb7683116bcb",
     "/ng-interview-app/manifest.webmanifest": "a8ff07c0cc47df964116a3c1030ec35abe620ed4",

@@ -19,6 +19,7 @@
   </div>
 </div>
 
+
 <!-- Create or update Question -->
 <div class="row justify-content-center top-10 animated bounceInRight" *ngIf="showQuestionForm">
   <div class="col-md-8 col-sm-10 col-lg-10">
@@ -35,6 +36,7 @@
             </label>
             <select name="questionType" id="questionType" class="form-control">
               <option value="">Choose...</option>
+              <option [value]="type.id" *ngFor="let type of questionTypes">{{ type.name }} - {{ type.description }}</option>
             </select>
           </div>
 

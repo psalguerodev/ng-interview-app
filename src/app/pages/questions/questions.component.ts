@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuestionType, QuestionsService, Question } from '../../services/questions.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-questions',
@@ -12,22 +13,27 @@ export class QuestionsComponent implements OnInit {
   questionType: QuestionType;
   question: Question;
 
+  questionTypes: QuestionType[];
+
   constructor(private readonly questionsService: QuestionsService) { }
 
   ngOnInit() {
     this.showQuestionForm = true;
     this.cleanQuestionType();
     this.cleanQuestion();
+    this.questionsService.questionTypeObserver().subscribe(types => {
+      this.questionTypes = types as QuestionType[];
+    });
   }
 
   saveQuestionType(): void {
-    console.log(`QuestionType:`, this.questionType);
     this.questionsService.saveQuestionType(this.questionType);
     this.cleanQuestionType();
   }
 
   cleanQuestionType() {
     this.questionType = {
+      id: '',
       description: '',
       name: ''
     };
@@ -35,6 +41,7 @@ export class QuestionsComponent implements OnInit {
 
   cleanQuestion() {
     this.question = {
+      id: '',
       background: '',
       labels: [],
       question: '',
